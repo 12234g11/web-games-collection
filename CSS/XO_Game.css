@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(/Pictures/صورة\ واتساب\ بتاريخ\ 2025-04-20\ في\ 15.42.25_a306979e.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.container{
+    width: 340px;
+    color: #000000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: system-ui;
+    font-weight: 700;
+    font-size: 29px;
+    
+}
+.dashboard{
+    background-color: rgb(123 17 17);
+    padding: 15px 10px;
+    margin: 3px;
+    box-shadow: 0 0 10px inset #000000;
+    transition: 0.5s;
+
+}
+span{
+    color:#fff ;
+    transition: 0.5s;
+
+}
+
+.square{
+    width: 109px;
+    height: 109px;
+    background-color: rgb(123 17 17);
+    float: left;
+    margin: 2px;
+    box-shadow: 0 0 10px inset #000000;
+    font-size: 77px;
+    transition: 0.5s;
+}
+.dashboard:hover{
+    box-shadow: 0 0 20px inset #000000;
+    background-color: rgb(105, 20, 20);
+    color: #ffffff;
+
+}
+.dashboard:hover span{
+    color: #000000;
+}
+
+.square:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px inset #000000;
+    background-color: rgb(73, 73, 73);
+}
+html, body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: system-ui;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 11px;
+    font-weight: 500;
+    white-space: nowrap;
+
+}

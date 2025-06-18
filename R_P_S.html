@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title> 
+        <link rel="stylesheet" href="/CSS/R_P_S.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="ComputerContainer">
+                <h1 id="opponent-score">Computer Score : 0</h1>
+                <img class="noimg" id="opponent-choice" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Your Choice">
+            </div>
+            
+            <br>
+            <div class="YourContainer">
+                <img id="your-choice" src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" alt="Your Choice">
+                <div id="choices">
+                    <img id="rock" src="/Pictures/rock.png" alt="Rock" onclick="selectChoice(this.id)">
+                    <img id="paper" src="/Pictures/paper.png" alt="Paper" onclick="selectChoice(this.id)">
+                    <img id="scissors" src="/Pictures/scissors.png" alt="Scissors" onclick="selectChoice(this.id)">
+                </div>
+                <h1 id="your-score">Your Score : 0</h1>
+                <button class="Bt" onclick="winnerWindow()">Play New Game.</button>
+            </div>
+            <div id="winner">
+                <div id="txt">Computer Win</div>
+            </div>
+        </div>
+        <footer>
+            &copy; 2025 Yasser Khaled. All rights reserved.
+        </footer>
+        <script src="/Js/R_P_S.js"></script>
+    </body>
+</html>

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+body {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 600;
+    background-image: url(/Pictures/336634113_592d2a1c-82ee-4698-9072-9d91d5cfdab4.jpg);
+    background-size: cover;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+}
+
+h1 {
+    font-size: 55px;
+    color: #fff;
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px rgb(187, 16, 16);
+    letter-spacing: 3px;
+}
+
+ul {
+    display: inline;
+}
+
+ul li {
+    position: relative;
+    top: 18px;
+    margin: 14px 0px;
+    list-style: none;
+}
+
+ul:hover li a {
+    opacity: 0;
+}
+
+ul li a {
+    text-shadow: 1px 1px 2px black, 0 0 25px red, 0 0 5px rgb(187, 16, 16);
+    text-decoration: none;
+    color: #fff;
+    font-size: 35px;
+    transition: 0.5s;
+    display: inline-block;
+}
+
+ul li a:hover {
+    color: rgb(194, 17, 17);
+    transform: scale(1.1);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(255, 255, 255), 0 0 5px rgb(219, 207, 207);
+    opacity: 1;
+    letter-spacing: 3px;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+@media (min-width:821px) and (max-width:1050px){
+    h1 {
+        font-size: 95px;
+    }
+    a {
+        font-size: 70px !important;
+    }
+    footer {
+        font-size: 19px !important;
+    }
+}
+
+@media (min-width:551px) and (max-width:820px){
+    h1 {
+        font-size: 70px;
+    }
+    a {
+        font-size: 50px !important;
+    }
+    footer {
+        font-size: 19px !important;
+    }
+}
+
+@media (max-width:550px) {
+    h1 {
+        font-size: 45px;
+    }
+    a {
+        font-size: 30px !important;
+    }
+    footer {
+        font-size: 10px !important;
+    }
+}

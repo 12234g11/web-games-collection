@@ -1,0 +1,100 @@
+body {
+    font-family: "Poetsen One", sans-serif;
+    text-align: center;
+    color: aliceblue;
+    margin: 0;
+    padding: 20px;
+    background-image: url(/Pictures/Picsart_25-04-26_17-15-22-494.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+#board {
+    height: 540px;
+    width: 630px;
+    background-color: blue;
+    border: 10px solid navy;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/* خلايا اللعبة */
+.tile {
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 5px solid navy;
+    box-sizing: border-box;
+}
+
+.red-piece {
+    background-color: red;
+}
+
+.yellow-piece {
+    background-color: yellow;
+}
+
+/* نص الفائز */
+
+#winnerBoard{
+    width: 25rem;
+    height: 10rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:navy;
+    font-size: 42px;
+    border-radius: 75px;
+    box-shadow: 0 0 21px #0000ff, 0 0 8px inset #000000;
+    opacity: 0;
+    transition: 0.5s;
+}
+#txt{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: fit-content;
+    white-space: nowrap;
+    text-shadow:
+    1px 1px 5px #000,
+   -1px -1px 5px #000;
+}
+@keyframes flash {
+    0%, 100% { background-color: navy; }
+    50% { background-color: #00f; }
+}
+
+#winnerBoard.win-effect {
+    animation: flash 0.5s infinite;
+}
+
+/* responsiveness */
+@media(max-width: 767px) {
+    #board {
+        width: 85vw;
+        height: auto;
+        padding: 10px;
+    }
+
+    .tile {
+        width: 10vw;
+        height: 10vw;
+        margin: 2px;
+    }
+}
