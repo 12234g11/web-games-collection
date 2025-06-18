@@ -36,6 +36,7 @@ img{
 .YourContainer{
     position: relative;
     top: 3rem;
+    z-index: 7;
 }
 #opponent-choice{
     width: 80px;

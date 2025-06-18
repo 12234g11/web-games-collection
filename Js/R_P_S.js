@@ -12,18 +12,21 @@ function winnerWindow(){
     let containerTxt = document.getElementById("txt");
 
     if(yourScore > opponentScore){
+        container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'You Win';
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }
     else if(yourScore < opponentScore){
+        container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'Computer Win';
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }
     else{
+        container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'Draw';
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
