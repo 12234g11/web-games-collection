@@ -58,6 +58,9 @@ function winner(){
     } 
     if(counter == 10 && flag != 0){
         title.innerHTML='Game Draw';
+        let drawSound = new Audio('./sounds/mixkit-unlock-game-notification-253.wav'); 
+        drawSound.play();
+
         setInterval(function(){title.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }

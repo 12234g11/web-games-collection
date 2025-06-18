@@ -15,6 +15,8 @@ function winnerWindow(){
         container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'You Won';
+        let winSound = new Audio('./sounds/piglevelwin2mp3-14800.mp3');
+        winSound.play();
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }
@@ -22,6 +24,8 @@ function winnerWindow(){
         container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'You Lost';
+        let winSound = new Audio('./sounds/piglevelwin2mp3-14800.mp3');
+        winSound.play();
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }
@@ -29,11 +33,11 @@ function winnerWindow(){
         container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'Draw';
+        let drawSound = new Audio('./sounds/mixkit-unlock-game-notification-253.wav'); 
+        drawSound.play();
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }
-    let winSound = new Audio('./sounds/piglevelwin2mp3-14800.mp3');
-    winSound.play();
 }
 function selectChoice(id) {
     if(flag==1){
