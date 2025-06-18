@@ -29,7 +29,6 @@ h1 {
     align-items: center;
 }
 
-/* خلايا اللعبة */
 .tile {
     height: 70px;
     width: 70px;
@@ -48,7 +47,6 @@ h1 {
     background-color: yellow;
 }
 
-/* نص الفائز */
 
 #winnerBoard{
     width: 25rem;

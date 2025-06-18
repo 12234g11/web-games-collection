@@ -5,7 +5,6 @@ body{
     background-attachment: fixed;
     font-family: system-ui;
     font-weight: 800;
-    /* height: 100vh; */
 }
 img{
     width: 80px;
@@ -19,7 +18,6 @@ img{
 .container{
     width: 80%;
     height: 36rem;
-    /* margin: 64px auto; */
     text-align: center;
     background-color: #ffffff21;
     border-radius: 82px;
@@ -76,8 +74,6 @@ img:not(.noimg):hover {
     padding: 12px;
     background-color: rgb(0 0 0);
     box-shadow: 0 0 4px  #ffffff , 0 0 8px inset #ffffff;
-    /* position: relative;
-    bottom: 20px; */
     transition: 0.5s;
 
 }
