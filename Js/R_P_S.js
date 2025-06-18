@@ -36,12 +36,12 @@ function selectChoice(id) {
     if(flag==1){
         return;
     }
-    let winSound = new Audio('./sounds/pop-sound-effect-197846.mp3');
+    let winSound = new Audio('./sounds/pop-sound-effect-197846.mp3');sss
     winSound.play();
     you = id;
-    document.getElementById("your-choice").src = "/Pictures/" + you + ".png"; 
+    document.getElementById("your-choice").src = "./Pictures/" + you + ".png"; 
     opponent = choices[Math.floor(Math.random() * 3)]; 
-    document.getElementById("opponent-choice").src = "/Pictures/" + opponent + ".png";
+    document.getElementById("opponent-choice").src = "./Pictures/" + opponent + ".png";
     opchoice.style.opacity='1';
     urchoice.style.opacity='1';
 
