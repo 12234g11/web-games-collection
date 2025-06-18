@@ -36,7 +36,7 @@ function selectChoice(id) {
     if(flag==1){
         return;
     }
-    let winSound = new Audio('./sounds/pop-sound-effect-197846.mp3');sss
+    let winSound = new Audio('./sounds/pop-sound-effect-197846.mp3');
     winSound.play();
     you = id;
     document.getElementById("your-choice").src = "./Pictures/" + you + ".png"; 
