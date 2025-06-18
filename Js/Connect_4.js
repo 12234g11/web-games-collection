@@ -31,7 +31,7 @@ function setGame() {
 }
 
 function setPiece() {
-    let winSound = new Audio('../sounds/pop-sound-effect-197846.mp3');
+    let winSound = new Audio('./sounds/pop-sound-effect-197846.mp3');
     winSound.play();
     let turntxt = document.getElementById("Turns");
     if (gameOver) return;
@@ -146,7 +146,7 @@ function setWinner(r, c) {
     }
 
     container.classList.add('win-effect');
-    let winSound = new Audio('../sounds/piglevelwin2mp3-14800.mp3');
+    let winSound = new Audio('./sounds/piglevelwin2mp3-14800.mp3');
     winSound.play();
     gameOver = true;
 }
@@ -160,7 +160,7 @@ function isDraw() {
     containerTxt.style.color = 'black';
     container.classList.add('win-effect');
 
-    let drawSound = new Audio('../sounds/mixkit-unlock-game-notification-253.wav'); 
+    let drawSound = new Audio('./sounds/mixkit-unlock-game-notification-253.wav'); 
     drawSound.play();
 
     gameOver = true;

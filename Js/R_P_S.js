@@ -29,14 +29,14 @@ function winnerWindow(){
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }
-    let winSound = new Audio('../sounds/piglevelwin2mp3-14800.mp3');
+    let winSound = new Audio('./sounds/piglevelwin2mp3-14800.mp3');
     winSound.play();
 }
 function selectChoice(id) {
     if(flag==1){
         return;
     }
-    let winSound = new Audio('../sounds/pop-sound-effect-197846.mp3');
+    let winSound = new Audio('./sounds/pop-sound-effect-197846.mp3');
     winSound.play();
     you = id;
     document.getElementById("your-choice").src = "/Pictures/" + you + ".png"; 

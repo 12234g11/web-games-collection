@@ -14,7 +14,7 @@ function endGame(num1,num2,num3){
     document.getElementById('square'+ num3).style.background='#000';
     document.getElementById('square'+ num3).style.color='#fff';
     document.getElementById('square'+ num3).style.boxShadow = '0 0 10px inset rgb(73, 73, 73)';
-    let winSound = new Audio('../sounds/piglevelwin2mp3-14800.mp3');
+    let winSound = new Audio('./sounds/piglevelwin2mp3-14800.mp3');
     winSound.play();
     setInterval(function(){title.innerHTML += '.'},1000);
     setTimeout(function(){location.reload()},4000);
@@ -64,7 +64,7 @@ function winner(){
 }
 function turns(id){
     if(flag == 0) return;
-    let winSound = new Audio('../sounds/pop-sound-effect-197846.mp3');
+    let winSound = new Audio('./sounds/pop-sound-effect-197846.mp3');
     winSound.play();
     let element = document.getElementById(id);
     if(turn === 'X' && element.innerHTML ==''){
