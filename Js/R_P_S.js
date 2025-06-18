@@ -14,14 +14,14 @@ function winnerWindow(){
     if(yourScore > opponentScore){
         container.style.zIndex = 8;
         container.style.opacity = '1';
-        containerTxt.innerHTML = 'You Win';
+        containerTxt.innerHTML = 'You Won';
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }
     else if(yourScore < opponentScore){
         container.style.zIndex = 8;
         container.style.opacity = '1';
-        containerTxt.innerHTML = 'Computer Win';
+        containerTxt.innerHTML = 'You Lost';
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }

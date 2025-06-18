@@ -109,6 +109,13 @@ img:not(.noimg):hover {
     1px 1px 5px #000,
    -1px -1px 5px #000;
 }
+@media(max-width: 767px) {
+
+    #winner{
+        width: 20rem;
+    }
+
+}
 @media (max-width : 400px) {
     .container{
         font-size: 14px;

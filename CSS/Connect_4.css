@@ -18,6 +18,7 @@ h1 {
 }
 
 #board {
+    position: relative;
     height: 540px;
     width: 630px;
     background-color: blue;
@@ -27,6 +28,8 @@ h1 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    z-index: 7;
+
 }
 
 .tile {
@@ -81,20 +84,7 @@ h1 {
 #winnerBoard.win-effect {
     animation: flash 0.5s infinite;
 }
-.f1{
-    position: fixed;
-    bottom: -40px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: system-ui;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    font-size: 11px;
-    font-weight: 500;
-    white-space: nowrap;
 
-}
 .f2{
     position: fixed;
     bottom: -80px;
@@ -115,7 +105,9 @@ h1 {
         height: auto;
         padding: 10px;
     }
-
+    #winnerBoard{
+        width: 20rem;
+    }
     .tile {
         width: 10vw;
         height: 10vw;

@@ -131,6 +131,7 @@ function setWinner(r, c) {
     let containerTxt = document.getElementById("txt");
 
     if (board[r][c] === playerRed) {
+        container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'Red Wins!';
         containerTxt.style.color = 'red';
@@ -138,6 +139,7 @@ function setWinner(r, c) {
         setTimeout(function () { location.reload() }, 4000);
     }
     else if (board[r][c] === playerYellow) {
+        container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'Yellow Wins!';
         containerTxt.style.color = 'yellow';
@@ -154,7 +156,7 @@ function setWinner(r, c) {
 function isDraw() {
     let container = document.getElementById("winnerBoard");
     let containerTxt = document.getElementById("txt");
-
+    container.style.zIndex = 8;
     container.style.opacity = '1';
     containerTxt.innerHTML = 'Draw!';
     containerTxt.style.color = 'black';
