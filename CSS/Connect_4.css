@@ -4,7 +4,7 @@ body {
     color: aliceblue;
     margin: 0;
     padding: 20px;
-    background-image: url(/Pictures/Picsart_25-04-26_17-15-22-494.jpg);
+    background-image: url(../Pictures/Picsart_25-04-26_17-15-22-494.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: absolute;
