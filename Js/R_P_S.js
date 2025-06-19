@@ -24,8 +24,8 @@ function winnerWindow(){
         container.style.zIndex = 8;
         container.style.opacity = '1';
         containerTxt.innerHTML = 'You Lost';
-        let winSound = new Audio('./sounds/piglevelwin2mp3-14800.mp3');
-        winSound.play();
+        let loseSound = new Audio('./sounds/080047_lose_funny_retro_video-game-80925.mp3');
+        loseSound.play();
         setInterval(function(){containerTxt.innerHTML += '.'},1000);
         setTimeout(function(){location.reload()},4000);
     }
